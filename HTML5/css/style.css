@@ -133,7 +133,12 @@ details[open]:before {
 }
 
 summary {
+    display: block;
     outline: none;
+}
+
+summary::-webkit-details-marker {
+    display: none;
 }
 
 .third-section-pluses .third-section-pluses-list:last-child {
@@ -272,7 +277,7 @@ summary {
 
 .reviews-user-name {
     display: block;
-    margin: 0;
+    margin: 5px 0 0 0;
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
@@ -313,7 +318,7 @@ summary {
     left: -30px;
 }
 
-.bay-it-now {
+.buy-it-now {
     width: 100%;
     padding: 50px;
     box-sizing: border-box;
@@ -324,7 +329,7 @@ summary {
     align-items: flex-end;
 }
 
-.bay-it-now-head {
+.buy-it-now-head {
     margin: 0 0 30px 0;
     width: 100%;
     text-align: center;
@@ -334,9 +339,9 @@ summary {
     color: #445161;
 }
 
-.bay-it-now-first-block {
+.buy-it-now-first-block {
     width: 300px;
-    height: 310px;
+    min-height: 310px;
     background-color: #586A7E;
     border-radius: 10px;
     display: flex;
@@ -344,9 +349,9 @@ summary {
     justify-content: space-evenly;
 }
 
-.bay-it-now-second-block {
+.buy-it-now-second-block {
     width: 300px;
-    height: 410px;
+    min-height: 410px;
     background-color: #586A7E;
     border-radius: 10px;
     display: flex;
@@ -354,17 +359,17 @@ summary {
     justify-content: space-evenly;
 }
 
-.bay-it-now-third-block {
+.buy-it-now-third-block {
     width: 300px;
-    height: 500px;
     background-color: #586A7E;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    min-height: 500px
 }
 
-.bay-block-name {
+.buy-block-name {
     font-size: 24px;
     line-height: 30px;
     font-weight: 400;
@@ -376,7 +381,7 @@ summary {
     padding: 0;
 }
 
-.bay-block-price {
+.buy-block-price {
     width: 100%;
     height: 70px;
     background-color: white;
@@ -392,7 +397,7 @@ summary {
     padding-top: 15px;
 }
 
-.bay-block-list {
+.buy-block-list {
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
@@ -400,7 +405,7 @@ summary {
     margin: 0;
 }
 
-.bay-it-button {
+.buy-it-button {
     font-size: 18px;
     line-height: 18px;
     font-weight: 700;
@@ -415,13 +420,15 @@ summary {
     margin: 0 auto;
 }
 
-.bay-it-button:hover {
-    outline: lime 1px solid;
+.buy-it-button:hover {
+    background-color: lightgrey;
+    outline: none;
 }
 
-.bay-it-button:active {
+.buy-it-button:active {
     background-color: rgba(128, 128, 128, 0.2);
     color: white;
+    outline: none;
 }
 
 .contacts {
@@ -495,7 +502,8 @@ summary {
 }
 
 .contacts-btn:hover {
-    outline: lime 1px solid;
+    background-color: lightgrey;
+    outline: none;
 }
 
 .contacts-btn:active {
@@ -504,11 +512,11 @@ summary {
 }
 
 .contacts-input:focus {
-    outline: lime 1px solid;
+    outline: none;
 }
 
 .contacts-textarea:focus {
-    outline: lime 1px solid;
+    outline: none;
 }
 
 .social-network {
@@ -548,47 +556,56 @@ summary {
     justify-content: space-between;
 
 }
-.icon-twitter{
+
+.icon-twitter {
     font-size: 23px;
     padding: 5px;
     margin: 0;
 }
-.icon-facebook{
+
+.icon-facebook {
     font-size: 23px;
     padding: 5px;
     margin: 0;
 
 }
-.icon-linkedin{
+
+.icon-linkedin {
     font-size: 23px;
     padding: 5px;
     margin: 0;
 
 }
-.icon-google{
+
+.icon-google {
     font-size: 23px;
     padding: 5px;
     margin: 0;
 
 }
-.icon-youtube{
+
+.icon-youtube {
     font-size: 23px;
     padding: 5px;
     margin: 0;
 
 }
-.contacts-right-side{
+
+.contacts-right-side {
     display: flex;
     flex-direction: column;
     width: 20%;
 }
-.circle:hover{
+
+.circle:hover {
     color: #3abcff;
 }
-.circle:active{
+
+.circle:active {
     color: #602fff;
 }
-.footer{
+
+.footer {
     width: 100%;
     text-align: center;
     font-size: 12px;
