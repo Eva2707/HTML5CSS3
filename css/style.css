@@ -1549,6 +1549,9 @@ label,
         width: 100%;
         align-items: center;
     }
+    .info-about-us-link:after {
+        bottom: 30px;
+    }
 }
 
 /*# sourceMappingURL=style.css.map */
